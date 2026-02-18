@@ -6,11 +6,8 @@ import { Navigate } from "react-router-dom";
 import CanvasNotFound from '@/pages/NotFound/CanvasNotFound';
 import Login from '@/pages/Login/Login';
 import { DashBoard } from '@/pages/DashBoard/DashBoard';
-import { CreateClass } from '@/pages/CreateClass/CreateClass';
-import { ClassUserAccess } from '@/pages/ClassUserAccess/ClassUserAccess';
-import { CreatingTest } from '@/pages/CreatingTest/CreatingTest';
-import { ExamAccess } from '@/pages/ExamAccess/ExamAccess';
-
+import { Lessons } from '@/pages/Lessons/Lessons';
+import { FinishedLesson } from '@/pages/FinishedLesson/FinishedLesson';
 // Routes configuration - only import structure
 const routes: RouteObject[] = [
     {
@@ -27,21 +24,14 @@ const routes: RouteObject[] = [
                 element: <DashBoard />
             },
                 {
-                path: "/sinif-yarat",
-                element: <CreateClass />
+                path: "/dərslər",
+                element: <Lessons />
             },
                             {
-                path: "/şagird-icazeleri",
-                element: <ClassUserAccess />
+                path: "/bitən-dərslər",
+                element: <FinishedLesson />
             },
-                                        {
-                path: "/test-hazirla",
-                element: <CreatingTest />
-            },
-                                                  {
-                path: "/test-icazələri",
-                element: <ExamAccess />
-            },
+
         ],
     },
     {

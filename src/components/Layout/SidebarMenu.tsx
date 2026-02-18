@@ -6,7 +6,9 @@ import {
   UserOutlined,
   BookOutlined,
   FormOutlined,
-  UnlockOutlined
+  UnlockOutlined,
+  SolutionOutlined,
+  FileTextOutlined
 } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
 
@@ -51,25 +53,16 @@ const SidebarMenu = ({
       label: "DashBoard",
     },
     {
-      key: "sinif-yarat",
-      icon: <BookOutlined />,
-      label: "Sinif Yarat",
+      key: "dərslər",
+      icon: <SolutionOutlined />,
+      label: "Dərslər",
     },
-    {   
-      key: "şagird-icazeleri",
-      icon:<UserOutlined/>,
-      label: "Şagird Icazələri",
+        {
+      key: "bitən-dərslər",
+      icon: <FileTextOutlined />,
+      label: "Bitən Dərslər",
     },
-        {   
-      key: "test-hazirla",
-      icon:<FormOutlined/>,
-      label: "Test Hazirla",
-    },
-      {   
-      key: "test-icazələri",
-      icon:<UnlockOutlined/>,
-      label: "Test İcazələri",
-    }
+
 
   ];
 
